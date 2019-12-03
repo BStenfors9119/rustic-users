@@ -1369,12 +1369,12 @@ impl ::protobuf::reflect::ProtobufValue for User {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x13protos/rustic.proto\x12\x05users\x1a\x1bgoogle/protobuf/empty.prot\
-    o\"?\n\x0fGetUsersRequest\x12,\n\x05empty\x18\x01\x20\x01(\x0b2\x16.goog\
-    le.protobuf.EmptyR\x05empty\"5\n\x10GetUsersResponse\x12!\n\x05users\x18\
-    \x01\x20\x03(\x0b2\x0b.users.UserR\x05users\"-\n\x15GetUserByEmailReques\
-    t\x12\x14\n\x05email\x18\x01\x20\x01(\tR\x05email\"2\n\x0fGetUserRespons\
-    e\x12\x1f\n\x04user\x18\x01\x20\x01(\x0b2\x0b.users.UserR\x04user\"0\n\
+    \n\x0crustic.proto\x12\x05users\x1a\x1bgoogle/protobuf/empty.proto\"?\n\
+    \x0fGetUsersRequest\x12,\n\x05empty\x18\x01\x20\x01(\x0b2\x16.google.pro\
+    tobuf.EmptyR\x05empty\"5\n\x10GetUsersResponse\x12!\n\x05users\x18\x01\
+    \x20\x03(\x0b2\x0b.users.UserR\x05users\"-\n\x15GetUserByEmailRequest\
+    \x12\x14\n\x05email\x18\x01\x20\x01(\tR\x05email\"2\n\x0fGetUserResponse\
+    \x12\x1f\n\x04user\x18\x01\x20\x01(\x0b2\x0b.users.UserR\x04user\"0\n\
     \x18GetUserGithubInfoRequest\x12\x14\n\x05token\x18\x01\x20\x01(\tR\x05t\
     oken\"<\n\x19GetUserGithubInfoResponse\x12\x1f\n\x04user\x18\x01\x20\x01\
     (\x0b2\x0b.users.UserR\x04user\"Z\n\x04User\x12\x0e\n\x02id\x18\x01\x20\
