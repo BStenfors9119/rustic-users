@@ -16,7 +16,7 @@ use std::thread;
 use rustic_users::establish_connection;
 use rustic_users::rustic::*;
 use rustic_users::rustic_grpc::*;
-use rustic_users::users::{User, NewUser};
+use rustic_users::users::{NewUser, User};
 
 mod proto_converters;
 
@@ -86,7 +86,10 @@ impl UserService for RusticUsersImpl {
         let mut client = reqwest::Client::new();
         let mut user_git_hub = GetUserGithubInfoResponse::new();
 
-        println!("Inside of get_user_github_info: {}", req.message.get_token().to_string());
+        println!(
+            "Inside of get_user_github_info: {}",
+            req.message.get_token().to_string()
+        );
 
         let res = client
             .get("https://api.github.com/user")
@@ -105,7 +108,8 @@ impl UserService for RusticUsersImpl {
                         let git_hub_user: GithubUser = serde_json::from_str(&body).unwrap();
                         let conn = establish_connection();
                         let user_size: usize = 0;
-                        let existing_user_results = User::get_by_username(&git_hub_user.login, &conn);
+                        let existing_user_results =
+                            User::get_by_username(&git_hub_user.login, &conn);
                         if existing_user_results.is_empty() {
                             let new_rustic_user = NewUser {
                                 uname: String::from(git_hub_user.login),
@@ -119,13 +123,13 @@ impl UserService for RusticUsersImpl {
                             if User::insert(&new_rustic_user, &conn) {
                                 println!("Success! We now have {} users!", User::all(&conn).len());
 
-                                let user_resp = User::get_by_username(&new_rustic_user.uname, &conn);
+                                let user_resp =
+                                    User::get_by_username(&new_rustic_user.uname, &conn);
 
                                 let proto_user = proto_converters::user_to_proto(&user_resp[0]);
 
                                 user_git_hub.set_user(proto_user);
                             }
-
                         } else {
                             println!("Inside of else statement since we found a user");
                             let existing_user = &existing_user_results[0];
@@ -139,26 +143,24 @@ impl UserService for RusticUsersImpl {
                                 active: existing_user.active,
                             };
 
-
-
                             if User::update_by_id(existing_user.id, &conn, user) {
                                 println!("Success! We now have a user!");
-                                let git_hub_updated_user: GithubUser = serde_json::from_str(&body).unwrap();
+                                let git_hub_updated_user: GithubUser =
+                                    serde_json::from_str(&body).unwrap();
 
-                                let user_resp = User::get_by_username(&git_hub_updated_user.login, &conn);
+                                let user_resp =
+                                    User::get_by_username(&git_hub_updated_user.login, &conn);
 
                                 let proto_user = proto_converters::user_to_proto(&user_resp[0]);
 
                                 user_git_hub.set_user(proto_user);
                             }
-
                         }
-                    },
+                    }
                     Err(e) => println!("Error parsing body text: {}", e),
                 }
-
-            },
-            Err(e) => println!("error executing auth request")
+            }
+            Err(e) => println!("error executing auth request"),
         }
 
         resp.finish(user_git_hub)

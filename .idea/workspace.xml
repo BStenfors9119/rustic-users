@@ -7,7 +7,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0321cac4-3b09-47aa-9159-7c1abf525d84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/rustic_users_client.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/rustic_users_client.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/rustic_users_server.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/rustic_users_server.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rustic.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rustic_grpc.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +53,18 @@
     <property name="settings.editor.selected.configurable" value="language.rust.cargo" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/bin/proto_converters" />
-      <recent name="$PROJECT_DIR$/src/bin" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/protos" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_scripts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/_scripts/docker" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/bin/proto_converters" />
+      <recent name="$PROJECT_DIR$/src/bin" />
+      <recent name="$PROJECT_DIR$/protos" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RustProjectSettings">
@@ -98,7 +103,7 @@
       <workItem from="1563920181407" duration="3044000" />
       <workItem from="1569435686825" duration="1288000" />
       <workItem from="1575400407805" duration="604000" />
-      <workItem from="1575402267714" duration="8542000" />
+      <workItem from="1575402267714" duration="17632000" />
     </task>
     <servers />
   </component>
@@ -106,10 +111,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1577" y="357" width="685" height="508" key="find.popup" timestamp="1575411916806">
+    <state x="1577" y="357" width="685" height="508" key="find.popup" timestamp="1575497417975">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state x="1577" y="357" width="685" height="508" key="find.popup/3360.23.1920.1177/1440.23.1920.1177/0.23.1440.877@1440.23.1920.1177" timestamp="1575411916806" />
+    <state x="1577" y="357" width="685" height="508" key="find.popup/3360.23.1920.1177/1440.23.1920.1177/0.23.1440.877@1440.23.1920.1177" timestamp="1575497417975" />
   </component>
   <component name="masterDetails">
     <states>
