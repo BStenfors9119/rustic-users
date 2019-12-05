@@ -7,12 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0321cac4-3b09-47aa-9159-7c1abf525d84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/rustic_users_client.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/rustic_users_client.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/rustic_users_server.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/rustic_users_server.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rustic.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rustic_grpc.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +98,7 @@
       <workItem from="1563920181407" duration="3044000" />
       <workItem from="1569435686825" duration="1288000" />
       <workItem from="1575400407805" duration="604000" />
-      <workItem from="1575402267714" duration="17632000" />
+      <workItem from="1575402267714" duration="19009000" />
     </task>
     <servers />
   </component>
